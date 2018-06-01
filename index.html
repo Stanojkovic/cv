@@ -12,6 +12,22 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
  	
  	<link rel="stylesheet" href="mdb/css/compiled.min.css">
+	<style>
+		/* ScrollAnimation */
+		/* Ensure elements are hidden before fading in */
+            [data-entrance] { visibility: hidden; }
+			
+			[data-entrance="my-custom-animation"]{
+			transform: rotate(180deg);
+			opacity: 0;
+			}
+			
+		[data-entrance="my-custom-animation"].has-entered{
+		transform: rotate(0deg);
+		opacity: 1;
+	}
+  </style>
+
   </head>
   <body>
     <div class="jumbotron text-center">
@@ -20,22 +36,102 @@
 	
     <div class="col-sm-12">
        
-  <img src="sasa.jpg" alt="Stanojkovic Sasa" class="img-thumbnail" style="height:150px;">
+		<img src="sasa.jpg" alt="Stanojkovic Sasa" class="img-thumbnail" style="height:150px;">
     </div>
     </div>
  
 </div>
  
  <div class="container">
-  <div class="row" style="">
-    <div class="col-sm-12 justify-content-center">
-      <h3><span><i class="fa fa-user" aria-hidden="true"></i></span>&nbsp;&nbsp;&nbsp;About Me</h3>
+	<div class="row">
+		<div class="col-sm-12 text-center">
+		  <h3><span><i class="fa fa-user" aria-hidden="true"></i></span>&nbsp;&nbsp;&nbsp;About Me</h3>
+		  <hr>
+	</div>
+	
+</div>
+<!-- second container of edu -->
+<div class="container-fluid">		
+<div class="row">
+
+<div class="col-lg-12 wow animated fadeInDown p-1 ">
+ <ul class="nav md-tab nav-justified ">
+    
+    <li class="nav-item border border-danger border-left-0 border-top-0 border-bottom-0 waves-effect waves-light">
+        <a class="nav-link active" data-toggle="tab" href="#panel11" role="tab"><span><i class="fa fa-id-badge fa-3x text-danger wow animated bounce " aria-hidden="true"></i></span></a>
+    </li>
+    <li class="nav-item waves-effect waves-light">
+        <a class="nav-link" data-toggle="tab" href="#panel12" role="tab"><span><i class="fa fa-picture-o fa-3x text-danger wow animated bounce" aria-hidden="true"></i></span></a>
+    </li>
+  
+</ul>
+
+<div class="tab-content">
+   <!--Panel 1-->
+    <div class="tab-pane fade in show active" id="panel11" role="tabpanel" style="color:#003366; font-size:14px;">
+        <p>I was born in 1978. in Leskovac. I graduated from the secondary technical school, the direction "Mechanical Engineering and Metal Processing" as a student of the generation of all grades.</p>
+        <p>I am a member of Leskovac School of comics since its establishment in 1995. I was actively involved in drawing by 1997 when I enrolled at the Military Academy in Belgrade.
+ I published short comic books in local newspapers and comic magazines such as
+<span class="text-danger"><b>Naša reč</b></span>, <span class="text-danger"><b>Đački zabavnik</b></span>, <span class="text-danger"><b>Arsenal</b></span> and <span class="text-danger"><b>Parabellum</b></span>. During the studies and the service, I illustrated several textbooks for the Military Academy.</p>
+        <p>In 2001, I graduated at the Military Academy as the best in class ABHO. I am retired military officer.</p>
+
+       
+
+ <a href="https://drive.google.com/file/d/0B0LG-RkVBwmpYW1aXzlsd1dBLTA/view?usp=sharing" target="_blank" alt="cv-sasastanojkovic"><button class="btn btn-outline-danger text-lowercase">CV.pdf</button></a>
+ 
     </div>
-   
-  </div>
+    <!--/.Panel 1-->
+
+    <!--Panel 2-->
+    <div class="tab-pane fade" id="panel12" role="tabpanel" style="color:#003366; font-size:13px;">
+        
+
+      <ul type="square">
+		<li>Days of comics, Gornji Milanovac, 24-26.06.1996.г.</li>
+<li>Year of the comics school or "Who does it draw there?", Leskovac, 15.07.1996.г.</li>
+<li>Days of comics in Nis, Nis, 9-10.07.1997.г.</li>
+<li>Joint exhibition of Leskovac and Belgrade school comics, Leskovac, 12.07.1997.г.</li>
+<li>I Balkans festival of young comics creators, Leskovac, 24-25.07.1998.г.</li>
+<li>10 years of Leskovac school comics, Leskovac, 22-24.07.2005.г.</li>
+<li>Exhibition of professional military personnel on the theme "Fatherland-patriotism", Niš and Belgrade,2005.г.</li>
+<li>Group exhibition of trainees at the training center on the program of retraining officers, Faculty of Mechanical Engineering in Niš, 09.05.2008.г.</li>
+<li>XII Balkans festival of young comics creators, Leskovac, 25-27.07.2010.г.</li>
+<li>Comics in Leskovac, 1950-2010, Крушевац, 29.03.2012.г.</li>
+<li>XV Balkans festival of young comics creators, Leskovac, 28-30.07.2013.г.</li>
+<li>XVI Balkans festival of young comics creators, Leskovac, 27-29.07.2014.г.</li>
+<li>XVIII Balkans festival of young comics creators, Leskovac, 24-26.06.2016.г.</li>
+<li>14TH INTERNATIONAL COMICS FESTIVAL SKC BELGRADE 2016 </li>
+<li>XIX Balkans festival of young comics creators, Leskovac, 30.06.-02.07.2017.г.</li>
+</ul>
+        
+
+    </div>
+    <!--/.Panel 2-->
+	
 </div>
 
 
+</div>
+
+
+
+	
+</div>
+</div>
+
+</section>
+ <!-- end of edu -->
+ 
+ <div class="container">
+	<div class="row">
+		<div class="col-sm-12 text-center">
+		  <h3><span><i class="fa fa-user" aria-hidden="true"></i></span>&nbsp;&nbsp;&nbsp;Education</h3>
+		  <hr>
+	</div>
+	
+</div>
+ 
+ 
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
@@ -65,6 +161,7 @@
   <script type='text/javascript' src="mdb/js/compiled.min.js"></script>
 	<script type='text/javascript' src="mdb/js/wow.min.js"></script>
   
+
   
   </body>
 </html>
